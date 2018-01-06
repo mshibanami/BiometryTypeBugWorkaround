@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="BiometryTypeBugWorkaround_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="cji-i8-WyF">
+                                <rect key="frame" x="16" y="68" width="343" height="164"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="jHV-o6-RZl">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="38.666666666666664"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="240" verticalHuggingPriority="251" text="・canEvaluatePolicy(_:error:):" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xeJ-f4-Jnh">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="14.333333333333334"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ieq-ve-cvw">
+                                                <rect key="frame" x="0.0" y="18.333333333333329" width="343" height="20.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="760" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNf-JY-pCH">
+                                                        <rect key="frame" x="16" y="0.0" width="327" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="0.0"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="e7z-7D-9GA">
+                                        <rect key="frame" x="0.0" y="62.666666666666657" width="343" height="38.666666666666657"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="240" verticalHuggingPriority="251" text="・biometryType:" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9F5-kV-sqG">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="14.333333333333334"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sVu-bZ-2by">
+                                                <rect key="frame" x="0.0" y="18.333333333333343" width="343" height="20.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3B-5T-PhX">
+                                                        <rect key="frame" x="16" y="0.0" width="327" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="0.0"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="6ug-FW-jRE">
+                                        <rect key="frame" x="0.0" y="125.33333333333336" width="343" height="38.666666666666671"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="240" verticalHuggingPriority="251" text="・biometryTypeForWorkaround(with:):" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tkh-GS-i3J">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="14.333333333333334"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3FS-rF-ThG">
+                                                <rect key="frame" x="0.0" y="18.333333333333314" width="343" height="20.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azl-6e-GNb">
+                                                        <rect key="frame" x="16" y="0.0" width="327" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="0.0"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="W0N-0i-MdJ">
+                                <rect key="frame" x="0.0" y="710" width="375" height="49"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Run canEvaluatePolicy(_:error:) to get biometryType"/>
+                                <connections>
+                                    <action selector="onTapRunCanEvaluatePolicyButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="h7W-fG-kgm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="W0N-0i-MdJ" firstAttribute="centerX" secondItem="xav-if-yDD" secondAttribute="centerX" id="G3I-mk-rpc"/>
+                            <constraint firstItem="cji-i8-WyF" firstAttribute="top" secondItem="xav-if-yDD" secondAttribute="top" constant="24" id="GPO-Gc-4Km"/>
+                            <constraint firstItem="xav-if-yDD" firstAttribute="bottom" secondItem="W0N-0i-MdJ" secondAttribute="baseline" constant="24" id="Gos-zT-5eA"/>
+                            <constraint firstItem="cji-i8-WyF" firstAttribute="leading" secondItem="xav-if-yDD" secondAttribute="leading" constant="16" id="Udq-dg-xAO"/>
+                            <constraint firstItem="xav-if-yDD" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="W0N-0i-MdJ" secondAttribute="trailing" id="eoE-iz-15R"/>
+                            <constraint firstItem="W0N-0i-MdJ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xav-if-yDD" secondAttribute="leading" id="nqd-SG-O2h"/>
+                            <constraint firstItem="xav-if-yDD" firstAttribute="trailing" secondItem="cji-i8-WyF" secondAttribute="trailing" constant="16" id="uMY-1U-TlP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xav-if-yDD"/>
+                    </view>
+                    <connections>
+                        <outlet property="biometryTypeForWorkaroundLabel" destination="azl-6e-GNb" id="L9w-T6-jZ9"/>
+                        <outlet property="biometryTypeLabel" destination="I3B-5T-PhX" id="ouD-1t-9QA"/>
+                        <outlet property="canEvaluatePolicyLabel" destination="zNf-JY-pCH" id="aKY-x5-GmB"/>
+                        <outlet property="runCanEvaluatePolicyButton" destination="W0N-0i-MdJ" id="IWc-NT-TjZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,6 @@
+framework module BiometryTypeBugWorkaround {
+  umbrella header "BiometryTypeBugWorkaround-umbrella.h"
+
+  export *
+  module * { export * }
+}
