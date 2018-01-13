@@ -35,7 +35,9 @@ let biometryType = context.biometryTypeForWorkaround(
 
 ## Caution
 
-This library is unnecessary if your app's deployment target is iOS 11.1 or later.
+* Don't call this method before calling `canEvaluatePolicy(_:error:)`.
+    It doesn't have the default value (`none`).
+* This library is unnecessary if your app's deployment target is iOS 11.1 or later.
 Because this library is for the bug of 11.0 and 11.0.x.
 
 ## Example
