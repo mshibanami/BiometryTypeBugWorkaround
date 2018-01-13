@@ -7,20 +7,20 @@
 
 `LAContext` of `LocalAuthentication` framework has a property called `biometryType`.
 It has a type of biometric authentication supported by the device.
-It is supporsed to be set after called `LAContext`'s `canEvaluatePolicy(_:error:)`.
+It's supporsed to be set after called `LAContext`'s `canEvaluatePolicy(_:error:)`.
 But in some cases, it isn't set. It's a bug of iOS 11.0.x.
 
-This library provides a workaround for the bug.
+Futhermore, iOS devices would be crash if you call biometryType on iOS 11.0.
 
-## What is "a bug of iOS 11.0.x" ?
+(See more details of bugs: <http://www.openradar.me/radar?id=5061720007507968>)
 
-See more details: <http://www.openradar.me/radar?id=5061720007507968>
+This library provides a workaround for these bugs.
 
 ## Usage
 
-This library has just 1 method as `LAContext`'s extension.
-`biometryTypeForWorkaround(with:)`.
-It is a replacement of `LAContext`'s `biometryType` property. You can use it like this:
+This library provides just 1 method as `LAContext`'s extension.
+It's `biometryTypeForWorkaround(with:)`.
+It's a replacement of `LAContext`'s `biometryType` property. You can use it like this:
 
 ```swift
 let context = LAContext()
@@ -33,12 +33,10 @@ let biometryType = context.biometryTypeForWorkaround(
     with: error as? LAError)
 ```
 
-the method needs
-
 ## Caution
 
-This library is unnecessary if your app's minimum deployment target is iOS 11.1 or later.
-This library is for the bug of iOS 11.0.x.
+This library is unnecessary if your app's deployment target is iOS 11.1 or later.
+Because this library is for the bug of 11.0 and 11.0.x.
 
 ## Example
 
@@ -55,7 +53,7 @@ pod 'BiometryTypeBugWorkaround'
 
 ## Author
 
-Manabu Nakazawa (@mshibanami)
+Manabu Nakazawa ([@mshibanami](https://twitter.com/mshibanami))
 
 ## License
 

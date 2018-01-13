@@ -21,7 +21,7 @@
 import LocalAuthentication
 
 public extension LAContext {
-    /// biometryType that works properly even on iOS 11.0.x devices.
+    /// biometryType that works properly even on iOS 11.0 and 11.0.x devices.
     ///
     /// - Parameter error: a error of `canEvaluatePolicy(_:error:)`.
     ///   Set `nil` if the method was succeeded.
