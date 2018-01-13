@@ -26,13 +26,6 @@ import BiometryTypeBugWorkaround
 class TableOfContentsSpec: QuickSpec {
     override func spec() {
         describe("biometryTypeForWorkaround") {
-            it("is none before running canEvaluatePolicy()") {
-                let context = LAContext()
-
-                let biometryType1 = context.biometryTypeForWorkaround(with: nil)
-                expect(biometryType1) == LABiometryType.LABiometryNone
-            }
-
             it("is set after calling canEvaluatePolicy()") {
                 let context = LAContext()
                 var error: NSError?
