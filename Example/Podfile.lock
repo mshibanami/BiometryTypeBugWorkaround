@@ -25,7 +25,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BiometryTypeBugWorkaround: 766e4606f0cc78abeeeff76a623496e2bb886b05
+  BiometryTypeBugWorkaround: 980147d6e79cfb270291e0fb133ffd5ed108fe90
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
