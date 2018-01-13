@@ -27,7 +27,7 @@ public extension LAContext {
     ///   Set `nil` if the method was succeeded.
     ///
     /// - Returns: The type of biometric authentication supported by the device.
-    @available(iOS, introduced: 11.0, deprecated: 11.1, message: "This method is a workaround for iOS 11.0.x's bug, So you can just use `biometryType`. Yep, it's time to remove 'BiometryTypeBugWorkaround' library!")
+    @available(iOS, introduced: 11.0, deprecated: 11.1, message: "This method is a workaround for iOS 11.0.x's bug. So now you can just use `biometryType`. Yep, it's time to remove the library 'BiometryTypeBugWorkaround'!")
     public func biometryTypeForWorkaround(with error: LAError? = nil) -> LABiometryType {
         let iPhoneXHeight: CGFloat = 2436
 
@@ -35,21 +35,18 @@ public extension LAContext {
             return biometryType
         }
 
-        if let error = error {
-            if error.code == .biometryNotAvailable {
-                return .LABiometryNone
-            }
+        if let error = error,
+            error.code == .biometryNotAvailable {
+            return .LABiometryNone
+        }
 
-            let isiPhoneX
-                = (UIScreen.main.nativeBounds.height == iPhoneXHeight)
+        let isiPhoneX
+            = (UIScreen.main.nativeBounds.height == iPhoneXHeight)
 
-            if isiPhoneX {
-                return .faceID
-            } else {
-                return .touchID
-            }
+        if isiPhoneX {
+            return .faceID
         } else {
-            return biometryType
+            return .touchID
         }
     }
 }
