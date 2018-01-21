@@ -18,10 +18,10 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import Quick
-import Nimble
-import LocalAuthentication
 import BiometryTypeBugWorkaround
+import LocalAuthentication
+import Nimble
+import Quick
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {
@@ -45,8 +45,7 @@ class TableOfContentsSpec: QuickSpec {
                     let biometryTypeErrorNotSpecified = context.biometryTypeForWorkaround()
                     expect(biometryTypeErrorNotSpecified) != LABiometryType.LABiometryNone
                     expect(biometryTypeErrorNotSpecified) == realBiometryType
-                }
-                else {
+                } else {
                     guard let error = error as? LAError else {
                         fail("error is not supposed to be nil if canEvaluate is false.")
                         return

@@ -1,0 +1,41 @@
+included:
+    - BiometryTypeBugWorkaround
+    - Example
+    - Package.swift
+excluded:
+    - Carthage
+    - Example/Pods
+opt_in_rules:
+    - array_init
+    - attributes
+    - closure_end_indentation
+    - closure_spacing
+    - colon
+    - contains_over_first_not_nil
+    - empty_count
+    - explicit_init
+    - fallthrough
+    - first_where
+    - nimble_operator
+    - number_separator
+    - object_literal
+    - operator_usage_whitespace
+    - overridden_super_call
+    - override_in_extension
+    - private_action
+    - private_outlet
+    - prohibited_super_call
+    - redundant_nil_coalescing
+    - required_enum_case
+    - sorted_first_last
+    - sorted_imports
+    - yoda_condition
+disabled_rules:
+    - opening_brace
+line_length:
+    ignores_function_declarations: true
+    ignores_comments: true
+number_separator:
+    minimum_length: 5
+identifier_name:
+    min_length: 1
