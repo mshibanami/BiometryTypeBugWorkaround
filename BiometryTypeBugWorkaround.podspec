@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'BiometryTypeBugWorkaround'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   s.summary          = 'A workaround for iOS 11\'s bug about LAContext.biometryType.'
 
   s.description      = <<-DESC
